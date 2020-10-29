@@ -45,7 +45,7 @@ class CustomGraph3(GraphFromData):
             t = Text(s, stroke_width=0, size=0.2)
             t.next_to(self.x_axis.n2p(n), DOWN, buff=0.2)
             return t
-        date_texts = VGroup(*[get_text(date,num) for date,num in zip(num,dates)])
+        date_texts = VGroup(*[get_text(date,num) for date,num in zip(dates,nums)])
         self.x_axis.add(date_texts)
 
         x = [-2 , 3, 3, 5,  5,  8]
