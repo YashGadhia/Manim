@@ -46,7 +46,7 @@ class CustomGraph3(GraphFromData):
         y_labels = ["$\\delta_{2}$","$1$","$1 + \\delta_{1}$"]
         # generates VGroup with date_text positioning on their place
         def get_text(s,n):
-            t = Text(s, stroke_width=0, size=0.8)
+            t = TextMobject(s, stroke_width=0, size=0.8)
             t.next_to(self.x_axis.n2p(n), DOWN, buff=0.2)
             return t
         x_texts = VGroup(*[get_text(x_label,x_tick) for x_label,x_tick in zip(x_labels,x_ticks)])
