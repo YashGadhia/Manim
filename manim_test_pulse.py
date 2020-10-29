@@ -14,7 +14,7 @@ class Graphing(GraphScene):
     		return 1.0
     	elif x==3:
     		return 0.5
-    	elif x>3 & x<5:
+    	elif x>3 and x<5:
     		return 0.0
     	elif x==5:
     		return 0.15	
