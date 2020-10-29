@@ -64,7 +64,7 @@ class CustomGraph3(GraphFromData):
         # |
         # V
         points_1 = self.get_points_from_coords(coords_1)
-        points_1 = self.get_points_from_coords(coords_2)
+        points_2 = self.get_points_from_coords(coords_2)
         
         graph_1 = DiscreteGraphFromSetPoints(points_1,color=GREEN)
         graph_2 = DiscreteGraphFromSetPoints(points_2,color=GREEN)
