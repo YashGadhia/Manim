@@ -37,7 +37,7 @@ class CustomGraph3(GraphFromData):
         "y_axis_label": "$H_{BS}$",
         "y_tick_frequency": 3,
         "function_color": WHITE,
-        "axes_color": BLUE
+        "axes_color": BLUE,
         "graph_origin": 10
     }
     def construct(self):
