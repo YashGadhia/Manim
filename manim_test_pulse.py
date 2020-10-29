@@ -14,7 +14,7 @@ class Graphing(GraphScene):
     		return 1.0
     	elif x>5:
     		return 0.3
-    	else
+    	else:
     	return 0.0
         #return np.piecewise(x, [x<3, x>=5], [1, 0.3])
 
