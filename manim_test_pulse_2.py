@@ -30,10 +30,11 @@ class CustomGraph3(GraphFromData):
         "x_min": 0,
         "x_max": 10,
         "x_axis_label": "$\\Omega$",
+        "x_tick_frequency": 10
         "y_min": -1,
         "y_max": 2,
         "y_axis_label": "$H_{BS}$",
-        "y_tick_frequency": 0.2,
+        "y_tick_frequency": 2,
         "function_color": WHITE,
         "axes_color": BLUE
     }
