@@ -38,7 +38,7 @@ class CustomGraph3(GraphFromData):
         "y_tick_frequency": 3,
         "function_color": WHITE,
         "axes_color": BLUE,
-        "graph_origin": (7,0)
+        "x_axis_width": 10
     }
     def construct(self):
         self.setup_axes(animate=True)
@@ -103,8 +103,8 @@ class CustomGraph3(GraphFromData):
         self.y_axis_label = "$H_{LP}$"
         self.x_axis_label = "$\\Omega_{L}$"
         self.x_min = -10
-        self.max = 0
-        self.graph_origin = -10
+        self.x_max = 0
+        #self.graph_origin = -10
         self.setup_axes(animate=True)
         self.x_axis.add(x_texts_2)
         self.y_axis.add(y_texts)
