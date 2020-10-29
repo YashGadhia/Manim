@@ -51,7 +51,7 @@ class CustomGraph3(GraphFromData):
             return t
         x_texts = VGroup(*[get_text(x_label,x_tick) for x_label,x_tick in zip(x_labels,x_ticks)])
         y_texts = VGroup(*[get_text(y_label,y_tick) for y_label,y_tick in zip(y_labels,y_ticks)])
-        self.x_axis.add(x_texts)
+        #self.x_axis.add(x_texts)
         self.y_axis.add(y_texts)
 
         x_1 = [-2 , 3, 3, 5,  5,  8]
@@ -67,9 +67,9 @@ class CustomGraph3(GraphFromData):
         points_2 = self.get_points_from_coords(coords_2)
         
         graph_1 = DiscreteGraphFromSetPoints(points_1,color=GREEN)
-        #graph_2 = DiscreteGraphFromSetPoints(points_2,color=GREEN)
+        graph_2 = DiscreteGraphFromSetPoints(points_2,color=GREEN)
         #dots = self.get_dots_from_coords(coords)
 
         #self.add(graph)
-        self.play(ShowCreation(graph_1,run_time=4),ShowCreation(graph_2,run_time=4))
+        self.play(ShowCreation(graph_1,run_time=4))#,ShowCreation(graph_2,run_time=4))
         self.wait(3)
