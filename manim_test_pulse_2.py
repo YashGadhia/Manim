@@ -32,7 +32,7 @@ class CustomGraph3(GraphFromData):
         "x_axis_label": "\\Omega",
         "y_min": -1,
         "y_max": 2,
-        "y_axis_label": "H_{BS}"
+        "y_axis_label": "H_{BS}",
         "function_color": WHITE,
         "axes_color": BLUE
     }
