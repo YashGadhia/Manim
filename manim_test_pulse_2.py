@@ -42,7 +42,7 @@ class CustomGraph3(GraphFromData):
         dates = ['a', 'b']
         # generates VGroup with date_text positioning on their place
         def get_text(s,n):
-            t = Text(s, stroke_width=0, size=0.2)
+            t = Text(s, stroke_width=0, size=1)
             t.next_to(self.x_axis.n2p(n), DOWN, buff=0.2)
             return t
         date_texts = VGroup(*[get_text(date,num) for date,num in zip(dates,nums)])
