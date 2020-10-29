@@ -108,7 +108,7 @@ class CustomGraph3(GraphFromData):
         self.play(ShowCreation(graph_3,run_time=4),ShowCreation(graph_4,run_time=4))
         self.wait(3)
         self.play(FadeOut(graph_3),FadeOut(graph_4),FadeOut(self.y_axis),FadeOut(self.x_axis))
-        self.wait(2)
+        self.wait(1)
 
         #self.play(ShowCreation(number_line_1,run_time=2))
         #number_line_1.add(x_texts)
