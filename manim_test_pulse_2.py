@@ -34,7 +34,7 @@ class CustomGraph3(GraphFromData):
         "y_min": -1,
         "y_max": 2,
         "y_axis_label": "$H_{BS}$",
-        "y_tick_frequency": 2,
+        "y_tick_frequency": 3,
         "function_color": WHITE,
         "axes_color": BLUE
     }
