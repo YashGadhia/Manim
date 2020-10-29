@@ -47,11 +47,11 @@ class CustomGraph3(GraphFromData):
         # generates VGroup with date_text positioning on their place
         def get_text_1(s,n):
             t = TextMobject(s, stroke_width=0, size=0.5)
-            t.next_to(self.x_axis.n2p(n), DOWN, buff=0.2)
+            t.next_to(self.x_axis.n2p(n), DOWN, buff=1.0)
             return t
         def get_text_2(s,n):
             t = TextMobject(s, stroke_width=0, size=0.5)
-            t.next_to(self.y_axis.n2p(n), LEFT, buff=0.2)
+            t.next_to(self.y_axis.n2p(n), LEFT, buff=1.0)
             return t
         x_texts = VGroup(*[get_text_1(x_label,x_tick) for x_label,x_tick in zip(x_labels,x_ticks)])
         y_texts = VGroup(*[get_text_2(y_label,y_tick) for y_label,y_tick in zip(y_labels,y_ticks)])
