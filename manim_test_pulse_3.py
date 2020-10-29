@@ -38,7 +38,7 @@ class CustomGraph3(GraphFromData):
         "y_tick_frequency": 3,
         "function_color": WHITE,
         "axes_color": BLUE,
-        "graph_origin": 10
+        "graph_origin": (7,0)
     }
     def construct(self):
         self.setup_axes(animate=True)
